@@ -1,0 +1,8 @@
+<div *ngIf="form">
+  <form [form]="form" (ngSubmit)="onSubmit()" class="mat-typography">
+    <h1 class="mat-h1">Check if the resource is available</h1>
+    <input type="date" formControlName="date">
+    <input type="time" formControlName="time">
+    <button type="submit">Check availability</button>
+  </form>
+</div>

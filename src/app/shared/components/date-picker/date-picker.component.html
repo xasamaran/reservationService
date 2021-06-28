@@ -1,0 +1,8 @@
+<mat-card class="input-container">
+  <mat-form-field id="date-picker">
+    <mat-label>Date de reservation</mat-label>
+    <input [matDatepicker]="pickerDateDebut" formControlName="dateSignature" matInput>
+    <mat-datepicker-toggle [for]="pickerDateDebut" matSuffix></mat-datepicker-toggle>
+    <mat-datepicker #pickerDateDebut></mat-datepicker>
+  </mat-form-field>
+</mat-card>
